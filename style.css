@@ -1,0 +1,138 @@
+.cont,
+    .banner {
+      display: grid;
+      place-content: center;
+      color: white;
+}
+
+.large {
+      color: white;
+      font-weight: 150;
+      font-size: 120px;
+}
+.bannerOut,.colBanner{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#colchange{
+    animation: glow 10s infinite;
+    animation-timing-function: steps(100);
+}
+@keyframes glow{
+    0%{
+        background-color: rgb(255, 0, 0);
+        opacity:0.5;
+    }
+    50%{
+        background-color:violet;
+        opacity:0.7;
+    }
+    20%{
+        background-color: rgb(255, 187, 0);
+        opacity:0.7 ;
+    }
+    30%{
+        background-color: rgb(255, 128, 0);
+        opacity:0.7 ;
+    }
+    70% {
+        background-color: rgba(247, 134, 53, 0.921);
+        opacity:0.8;
+    }
+    100%{
+        background-color: rgb(255, 0, 0);
+        opacity:0.5;
+    }
+}
+.conticon{
+    font-size: 45px;
+    justify-content: space-between;
+    justify-content: center;
+    display: flex;
+}
+i{
+    margin: 20px;
+}
+i:hover{
+    cursor: pointer;
+    color:black;
+}
+.bub{
+    position: relative;
+    z-index: 1000;
+    height:5px;
+    width:1px;
+    border-radius: 50%;
+    background:white;
+    margin: 20px;
+    animation: bubble linear infinite;
+    animation-duration: calc(150s/var(--i));
+}
+
+.bubcont{
+    display: flex;
+    align-self: flex-end;
+    
+}
+@keyframes bubble{
+    0%{
+        transform: translateY(0vh);
+    }
+    100%{
+        transform: translateY(-100vh);
+    }
+}
+.namecont{
+    overflow: hidden;
+    height:100%;
+    white-space: nowrap;
+    animation:fall 1s steps(12) ;
+}
+@keyframes fall{
+    from{
+        border-right: 4px solid black;
+        width:0%;
+    }
+    to{
+        border-right: 4px solid white;
+        width:100%;
+    }
+}
+.btn{
+    width:170px;
+    justify-self: center;
+}
+#me{
+    height:200px;
+    width:200px;
+    margin: 40px;
+    border: solid black;
+    border-radius: 50%;
+}
+
+html, body {width: auto!important; overflow-x: hidden!important} 
+.skillcont{
+    display: flex;
+}
+.progress-bar{
+    animation: progress 3s ease ;
+}
+@keyframes progress {
+    from{
+        width:0%;
+    }
+
+    
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+    
+}
+a i{
+    color:white;
+}
