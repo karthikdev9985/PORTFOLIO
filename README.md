@@ -11,4 +11,4 @@ Welcome to my Portfolio Website! This website showcases my personal details, inc
 
 ## Installation
 As my Portfolio Website is a static website, there is no need for installation. Simply access the website using the provided link.
-http://lohithreddy.me/Portfolio-web/
+https://karthikdev9985.github.io/PORTFOLIO/
